@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+body {
+    background-color: #ffcdb2;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.App {
+    min-height: 100vh;
+    margin: 10px;
+}
+
+.search__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    .search__bar {
+        border-radius: 5px;
+        width: 50%;
+        border: none;
+        outline: none;
+        padding: 5px;
+        font-size: 20px;
+        color: #e5989b;
+    }
+
+    .search__btn {
+        background-color: #e5989b;
+        padding: 5px;
+        font-size: 20px;
+        border: none;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 500;
+        cursor: pointer;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        outline-color: #e5989b;
+    }
+
+
+}
+
+.recipe__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 10px;
+    margin-top: 50px;
+}
